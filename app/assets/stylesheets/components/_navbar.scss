@@ -1,0 +1,32 @@
+.navbar {
+  justify-content: space-between;
+  background: #E6E6E6;
+  height: 5em;
+
+  a:first-child{
+    color: lightslategray;
+    font-size: 26px;
+  }
+  .btn-ghost {
+    color: white;
+    border: 1px solid #4A4A4A;
+    background-color: #EBA75C;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-weight: normal;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+  }
+  
+  .btn-ghost:hover {
+    opacity: 1;
+  }
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
