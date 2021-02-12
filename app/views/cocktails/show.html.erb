@@ -14,10 +14,10 @@
             <h2>Ingredients</h2>
             <ul class="list-group list-group-flush">
                 <% @cocktail.doses.each do |dose| %>
-                    <li class="list-group-item">
+                    <li class="">
                     <strong><%= dose.ingredient.name %></strong> - 
                     <%= dose.description %>
-                    <%= link_to "Remove", dose_path(dose), method: :delete, data: { comfirm: "Are you sure?" }  %>
+                   <strong><%= link_to "Remove", dose_path(dose), method: :delete, data: { comfirm: "Are you sure?" }  %></strong>
                     </li>
                 <% end %>
             </ul>

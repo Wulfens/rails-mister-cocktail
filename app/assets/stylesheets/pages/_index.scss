@@ -20,19 +20,34 @@
         display: flex;
         justify-content: space-between;
         font-weight: 300;
-        a {
-            background-color: #2F4651;
-            color: white;
-            padding: 8px 10px;
-            border-radius: 3px;
-        }
-        #dose{
-            a{
+        .new_dose{
+            margin-top: 25px;
+            .btn{
                 background-color: #2F4651;
                 color: white;
                 padding: 8px 10px;
                 border-radius: 3px;
+                transition: all 0.1s ease;
+                &:hover{
+                    transform: scale(1.1);
+                }
             }
+        }
+        ul{
+            li{
+                list-style: none;
+                a{
+                    background-color: rgba(255, 255, 255, 0);
+                    color: #2F4651;
+                    font-weight: bolder;
+                }
+            }
+        }
+        a {
+            background-color: #2f4651;
+            color: white;
+            padding: 8px 10px;
+            border-radius: 3px;
         }
     }
     
@@ -46,7 +61,7 @@
     grid-gap: 20px;
     .card{
         z-index: 10;
-        transition: all 0.5s ease;
+        transition: all 0.2s ease;
         &:hover{
             transform: scale(1.3) ;
             z-index: 20;
